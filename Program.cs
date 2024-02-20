@@ -14,7 +14,8 @@ namespace MissingNumber
             Console.WriteLine(MissingNumber(nums));
             Console.ReadKey();
         }
-
+        
+        //O(n log n)
         static int MissingNumber(int[] nums)
         {
             int n = nums.Length;
@@ -26,6 +27,7 @@ namespace MissingNumber
             return n;
         }
 
+        //O(n^2)
         static int MissingNumber_Bad(int[] nums)
         {
             int n = nums.Length;
